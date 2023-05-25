@@ -13,7 +13,7 @@ var (
 //DdsRMyFav34
 
 func Connect() {
-	d, err := gorm.Open("mysql", "siralf:DdsRMyFav34@tcp(127.0.0.1:3306)/justagodb")
+	d, err := gorm.Open("mysql", "siralf:DdsRMyFav34@tcp(127.0.0.1:3306)/justagodb?charset=utf8mb4&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
